@@ -11,7 +11,37 @@
 <body>
     <script>
         // Tu código aquí
-
+        let correcta;
+        let respuesta;
+        let contrespuesta;
+        correcta = 4;
+        contrespuesta = 1;  
+        while(contrespuesta <= 3){
+            respuesta = parseInt(prompt("Adivina numero entre 1 y 10"));
+            if(respuesta==correcta){
+                console.log("Has acertado");
+                break;
+            }
+            console.log("Intentalo otra vez");
+            contrespuesta = contrespuesta + 1;
+        }             
+       
+       //Codigo antes del paso 10       
+        /* if(correcta==respuesta){
+            console.log("HAS ACERTADO");
+        }else{
+            respuesta = parseInt(prompt("Has fallado, introduce otro numero"));
+            if(correcta==respuesta){
+                console.log("HAS ACERTADO");
+            }else{
+                respuesta = parseInt(prompt("Has fallado, introduce otro numero"));
+                if(correcta==respuesta){
+                    console.log("HAS ACERTADO");
+                }else{
+                    respuesta = parseInt(prompt("Has fallado, no tienes mas intentos"));                    
+                }
+            }
+        }*/
     </script>
 </body>
 
