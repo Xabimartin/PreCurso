@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tablero</title>
+</head>
+
+<body>
+    <script>
+        let ancho;
+        let alto;
+        let respuesta1 = "";
+        let respuesta0 = "";
+        ancho = parseInt(prompt("Introducir anchura"));
+        alto = parseInt(prompt("Introducir altura"));
+        for(let i = 1; i <= alto; i=i+1){
+            if(i%2 == 1){
+                for(let i = 1; i <= ancho; i=i+1){
+                respuesta1 = respuesta1 + "OXOX";
+                }
+                console.log(respuesta1);
+                respuesta1 = "";                 
+            }
+            if(i%2 == 0){
+                for(let i = 1; i <= ancho; i=i+1){
+                respuesta0 = respuesta0 + "XOXO";
+                }
+                console.log(respuesta0);
+                respuesta0 = "";
+            }
+            
+        }
+    </script>
+</body>
+</html>
