@@ -24,6 +24,20 @@
         * 9	2
         * 10 1
         */
+        let numeros = [0,1,2,3,4,5,6,7,8,9,10];
+        let sumas = ["",0,0,0,0,0,0,0,0,0,0];
+        let elegido;
+        for(let i = 0; i < numeros.length; i++){
+            elegido = prompt("Introducir posicion deseada");
+            if(elegido<10){
+                sumas[elegido]= sumas[elegido]+1;
+            }
+        }
+        
+        for(let i = 0; i < numeros.length; i++){
+            console.log(numeros[i]," - ",sumas[i]);
+        }
+
     </script>
 </body>
 
